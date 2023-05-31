@@ -3,7 +3,7 @@
 
     $id = 1;
 
-    $stmt = $db->prepare("INSERT FROM usuarios WHERE id = :id");
+    $stmt = $db->prepare("INSERT INTO usuarios WHERE id = :id");
     $stmt->bindParam(':id', $id);
 
     if ($stmt->execute()) {
